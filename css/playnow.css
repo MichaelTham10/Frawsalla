@@ -1,0 +1,266 @@
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(206, 206, 206),
+    rgb(255, 255, 255)
+  );
+  height: 100px;
+}
+
+.image img {
+  width: 210px;
+  height: 120px;
+  padding-top: 20px;
+}
+
+.dropdown {
+  padding: 0;
+
+  width: 100px;
+
+  width: max-content;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  border: none;
+  top: 62px;
+  border-radius: 5px;
+}
+
+.dropdown-list {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 200px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.dropdownbtn {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 200px;
+  padding: 10px 10px 10px 10px;
+
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.dropdown:hover .drop-content {
+  display: flex;
+}
+
+.dropdownbtn:hover {
+  font-weight: bolder;
+}
+
+.dropdown-list:hover {
+  font-weight: bolder;
+}
+
+/* Content */
+.content {
+  background-image: url("../images/wallpaper1.jpg");
+
+  background-position: center;
+  background-size: cover;
+  padding: 5%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+  margin-bottom: -70px;
+
+  border-radius: 50px;
+}
+
+.logo img {
+  height: 500px;
+  width: 880px;
+}
+
+.reg {
+  color: rgb(141, 29, 141);
+  font-family: "Games", sans-serif;
+  font-size: 36px;
+}
+
+.midContent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.8);
+  color: white;
+  margin: 20px auto;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.midContent .form {
+  width: 100%;
+}
+
+.midContent .form .inputData {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.midContent .form .inputData label {
+  width: 200px;
+  text-align: left;
+}
+
+.midContent .form .inputData .Input {
+  width: 85%;
+}
+
+.midContent .form .inputData .selectGender {
+  display: flex;
+  width: 91%;
+}
+
+.midContent .form .inputData .selectGender select {
+  width: 100%;
+  height: 100%;
+}
+
+.midContent .form .inputData .check {
+  height: 15px;
+  width: 15px;
+  display: block;
+  padding-right: 8px;
+}
+
+.midContent .form .inputData .check .checkmark {
+  height: 15px;
+  width: 15px;
+}
+
+.btn-submit {
+  background-color: blueviolet;
+
+  color: white;
+  font-family: "Games", sans-serif;
+  padding: 3% 5% 3% 5%;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.checkBox {
+  cursor: pointer;
+}
+
+.Input {
+  padding: 2%;
+}
+
+#optGender {
+  padding: 2% 4% 2% 3%;
+}
+
+#taAddress {
+  padding: 2%;
+}
+
+.btn-submit:hover {
+  transition: 0.5s;
+
+  background-color: white;
+  color: blueviolet;
+}
+
+/* footer */
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 0;
+  height: 100px;
+  background-image: linear-gradient(
+    to top,
+    rgb(206, 206, 206),
+    rgb(255, 255, 255)
+  );
+}
+
+.foot-content .join {
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+.img-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-content {
+  align-items: center;
+}
+
+.mid-content img {
+  width: 173px;
+  height: 80px;
+  object-fit: cover;
+  padding-top: 20px;
+}
+
+.foot-content {
+  display: flex;
+  align-items: center;
+}
+
+.img-content img {
+  width: 40px;
+}
+
+.img-content .ig-png {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.img-content .fb-png {
+  height: 45px;
+}
+
+/* footer */
+
+@media screen and (max-width: 800px) {
+  .logo img {
+    height: 400px;
+    width: 680px;
+  }
+}

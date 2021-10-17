@@ -1,0 +1,368 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/*Header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(206, 206, 206),
+    rgb(255, 255, 255)
+  );
+  height: 100px;
+}
+
+.image img {
+  width: 210px;
+  height: 120px;
+  padding-top: 20px;
+}
+
+.dropdown {
+  padding: 0;
+
+  width: 100px;
+
+  width: max-content;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  border: none;
+  top: 62px;
+
+  border: none;
+}
+
+.dropdown-list {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 200px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.dropdownbtn {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 200px;
+  padding: 10px 10px 10px 10px;
+
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.dropdown:hover .drop-content {
+  display: flex;
+}
+
+.dropdownbtn:hover {
+  font-weight: bolder;
+}
+
+.dropdown-list:hover {
+  font-weight: bolder;
+}
+
+/*Header*/
+
+/*Main Content*/
+
+.mainContent {
+  background-image: url("../images/wallpaper2.jpg");
+  background-size: 100% 100%;
+  padding: 5%;
+}
+
+.contentTitle {
+  padding-top: 7px;
+  font-size: 54px;
+  text-align: center;
+  color: white;
+  font-family: "Games", sans-serif;
+
+  padding: 2%;
+}
+
+.box-content {
+  border: 1px solid black;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+
+  padding-bottom: 30px;
+}
+
+.contentEvent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides {
+  background: rgb(255, 255, 255, 0.7);
+  width: 1180px;
+  height: 650px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.slides img {
+  width: 1180px;
+  height: 650px;
+  border-radius: 10px;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  display: none;
+  cursor: pointer;
+}
+
+.slides:hover img {
+  opacity: 0.5;
+}
+
+.slides img.active {
+  display: inline-block;
+}
+
+.next,
+.back {
+  width: 100px;
+  height: 50px;
+  float: left;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+/* Main Content */
+
+/*Content Description */
+
+.Desc {
+  margin-top: 15px;
+}
+
+.DescImg {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 30%;
+  margin: auto;
+
+  padding-top: 30px;
+  border-color: white;
+}
+
+.DescImg img {
+  height: 250px;
+  width: 440px;
+}
+
+.DescTxt {
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+  color: white;
+}
+
+/* Character */
+.DescCharacter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  background-color: rgb(0, 0, 0, 0.7);
+  text-align: justify;
+  opacity: 0.7;
+  transition: 1s;
+  border-radius: 2%;
+}
+
+.DescCharacter:hover {
+  opacity: 1;
+  transition: 2s;
+}
+
+.CharInfo {
+  padding-left: 2%;
+}
+
+.CharInfo h1 {
+  color: greenyellow;
+  text-align: left;
+}
+
+.CharInfo h3 {
+  color: white;
+}
+
+/* Desc Online */
+.DescOnline {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  background-color: rgb(0, 0, 0, 0.7);
+  text-align: justify;
+  opacity: 0.7;
+  transition: 1s;
+  border-radius: 2%;
+}
+
+.DescOnline:hover {
+  opacity: 1;
+  transition: 2s;
+}
+
+.OnlineInfo {
+  padding-right: 2%;
+}
+
+.OnlineInfo h1 {
+  color: greenyellow;
+  text-align: left;
+}
+
+.OnlineInfo h3 {
+  color: white;
+}
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 0;
+  height: 100px;
+  background-image: linear-gradient(
+    to top,
+    rgb(206, 206, 206),
+    rgb(255, 255, 255)
+  );
+}
+
+.foot-content .join {
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+.img-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-content {
+  align-items: center;
+}
+
+.mid-content img {
+  width: 173px;
+  height: 80px;
+  object-fit: cover;
+  padding-top: 20px;
+}
+
+.foot-content {
+  display: flex;
+  align-items: center;
+}
+
+.img-content img {
+  width: 40px;
+}
+
+.img-content .ig-png {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.img-content .fb-png {
+  height: 45px;
+}
+
+/* footer */
+
+@media screen and (max-width: 800px) {
+  /* .slides {
+    background: rgb(255, 255, 255, 0.7);
+    width: 1180px;
+    height: 650px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+  }
+  
+  .slides img {
+    width: 1180px;
+    height: 650px;
+    border-radius: 10px;
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    display: none;
+    cursor: pointer;
+  } */
+
+  .slides {
+    width: 600px;
+    height: 331px;
+  }
+
+  .slides img {
+    width: 600px;
+    height: auto;
+  }
+
+  .DescImg {
+    width: 50%;
+  }
+
+  .DescCharacter img {
+    width: 400px;
+    height: 300px;
+  }
+
+  .CharInfo h1 {
+    font-size: 24px;
+  }
+
+  .CharInfo h3 {
+    font-size: 12px;
+  }
+
+  .DescOnline img {
+    width: 400px;
+    height: 300px;
+  }
+  .OnlineInfo h1 {
+    font-size: 24px;
+  }
+
+  .OnlineInfo h3 {
+    font-size: 12px;
+  }
+}

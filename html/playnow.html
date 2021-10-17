@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Now</title>
+    <link rel="stylesheet" href="../css/playnow.css">
+    <link href="http://fonts.cdnfonts.com/css/games" rel="stylesheet">
+    <script src="../js/playnow.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="image">
+            <img src="../images/Logo.png" alt="">
+        </div>
+        <div class="dropdown">
+            <button class="dropdownbtn">Play Now</button>
+            <div class="drop-content">
+                <a href="main.html"><button class="dropdown-list">Home</button></a>
+                <a href="event.html#kungfuPanda"><button class="dropdown-list">Event</button></a> 
+                <a href="screenshot.html"><button class="dropdown-list">Screenshots</button></a> 
+                <a href="character.html"><button class="dropdown-list">Characters</button></a>
+            </div> 
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="logo">
+            <img src="../images/Logo.png" alt="">
+        </div>
+        <div class="midContent">
+            <p class="reg">
+                Registration
+            </p>
+            <br>
+            <div class="form">
+                <div class="inputData">
+                    <label>Name</label>
+                    <input type="text" class="Input" id="txtName">
+                </div>
+                <div class="inputData">
+                    <label>Email</label>
+                    <input type="text" class="Input" id="txtEmail">
+                </div>
+                <div class="inputData">
+                    <label>Password</label>
+                    <input type="password" class="Input" id="txtPass">
+                </div>
+                <div class="inputData">
+                    <label>Confirm Password</label>
+                    <input type="password" class="Input" id="txtConPass">
+                </div>
+                <div class="inputData">
+                    <label>Gender</label>
+                    <div class="selectGender">
+                        <select id="optGender">
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputData">
+                    <label for="">Address</label>
+                    <textarea name="" id="taAddress" cols="53" rows="5"></textarea>
+                </div>
+                <div class="inputData">
+                    <label class=check>
+                        <input type="checkbox" id=cbAgree class="checkBox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>I Agree to the terms and conditions</p>
+                </div>
+                <button onclick="getResult()" class="btn-submit">R E G I S T E R</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="copyright">© Group 4</div>
+        <div class="mid-content">
+            <img src="../images/Logo.png" alt="">
+        </div>
+        <div class="foot-content">
+            <div class="img-content">
+                <a href="https://www.instagram.com/"><img src="../images/ig-logo.png" class="ig-png" alt=""></a>
+                <a href="https://www.facebook.com/"><img src="../images/facebook-logo.png" class="fb-png" alt=""></a> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
